@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Basic HTML Page</title>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6N3MG310G"></script>
@@ -14,32 +15,39 @@
   gtag('config', 'G-M6N3MG310G');
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Tervetuloa Kaupon verkkosivuille</h1>
     <nav>
-        <ul>
-            <li><a href="#home">Koti</a></li>
-            <li><a href="#about">Tietoa</a></li>
-            <li><a href="#services">Palvelut</a></li>
-            <li><a href="#contact">Yhteystiedot</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h2>Koti</h2>
-        <p>Tämä on main osio.</p>
-    </section>
-    <section id="about">
-        <h2>Tietoa</h2>
-        <p>Tämä on tieto-osio.</p>
-    </section>
-    <section id="services">
-        <h2>Palvelut</h2>
-        <p>Tämä on palveluosio.</p>
-    </section>
-    <section id="contact">
-        <h2>Yhteystiedot</h2>
-        <p>Tämä on yhteystieto-osio.</p>
-    </section>
+        <a href="/" class="brand">
+          <span>Kaupon kotisivu</span>
+        </a>
+        <input id="bmenu" type="checkbox" class="show">
+        <label for="bmenu" class="burger toggle pseudo button">menu</label>
+        <div class="menu">
+          <a href="/tests" class="pseudo button icon-help-circled">Test</a>
+          <a href="https://github.com/franciscop/picnic" target="_blank" class="pseudo button icon-g">GitHub</a>
+          <a href="/documentation" class="button icon-file-code">Documentation</a>
+        </div>
+      </nav>
+    <main class="main-content">
+        <h1>Welcome to Kaupo's website</h1>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the main section.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>This is the services section.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section.</p>
+        </section>
+    </main>
 </body>
 </html>
