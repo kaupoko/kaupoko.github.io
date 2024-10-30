@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Basic HTML Page</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6N3MG310G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Kaupo's Website</title>
 
-  gtag('config', 'G-M6N3MG310G');
-</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6N3MG310G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M6N3MG310G');
+    </script>
+
+    <!-- Picnic CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
 
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
         <a href="/" class="brand">
           <span>Kaupon kotisivu</span>
@@ -30,24 +33,30 @@
           <a href="/documentation" class="button icon-file-code">Documentation</a>
         </div>
       </nav>
-    <main style="margin-top: 60px; padding: 1em;">
-        <h1>Welcome to Kaupo's website</h1>
+
+    <!-- Main Content -->
+    <main style="margin-top: 60px; padding: 1em;"> 
+        <h1>Welcome to Kaupo's Website</h1>
+
         <section id="home">
             <h2>Home</h2>
-            <p>This is the main section.</p>
+            <p>This is the home section.</p>
         </section>
+
         <section id="about">
             <h2>About</h2>
             <p>This is the about section.</p>
         </section>
+
         <section id="services">
             <h2>Services</h2>
             <p>This is the services section.</p>
         </section>
+
         <section id="contact">
             <h2>Contact</h2>
             <p>This is the contact section.</p>
         </section>
-    </main>
+    </main> 
 </body>
 </html>
