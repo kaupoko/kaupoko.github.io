@@ -1,64 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaupo's Website</title>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6N3MG310G"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-M6N3MG310G');
-    </script>
-
-    <!-- Picnic CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple HTML Page</title>
+    <style>
+        :root { --bg:#f6f8fb; --card:#fff; --accent:#2563eb; --muted:#6b7280; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111; }
+        .container { max-width:900px; margin:40px auto; padding:24px; }
+        header { display:flex; align-items:center; gap:16px; }
+        h1 { margin:0; font-size:1.6rem; }
+        .card { background:var(--card); padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(16,24,40,0.06); }
+        p.lead { margin:4px 0 0; color:var(--muted); }
+        footer { margin-top:18px; color:var(--muted); font-size:0.9rem; text-align:center; }
+        button { background:var(--accent); color:#fff; border:0; padding:10px 14px; border-radius:6px; cursor:pointer; }
+        button:active { transform:translateY(1px); }
+        nav a { color:var(--accent); text-decoration:none; margin-right:12px; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="card" style="display:inline-block;">
+                <h1>HELLO WORLD</h1>
+                <p class="lead">A minimal starter page you can edit.</p>
+            </div>
+        </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="/" class="brand">
-          <span>Kaupo's Website</span>
-        </a>
-        <input id="bmenu" type="checkbox" class="show">
-        <label for="bmenu" class="burger toggle pseudo button">menu</label>
-        <div class="menu">
-          <a href="#home" class="pseudo button icon-help-circled">home</a>
-          <a href="#services" class="pseudo button icon-g">services</a>
-            <a href="#about" class="pseudo button icon-user">about</a>
-            <a href="#contact" class="pseudo button icon-mail">contact</a>
-          <a href="/documentation" class="button icon-file-code">Documentation</a>
-        </div>
-      </nav>
+        <main style="margin-top:18px;">
+            <section class="card">
+                <h2>About</h2>
+                <p>This is a clean, small HTML template. It includes responsive meta tags, basic styling, and a tiny script example.</p>
+                <nav style="margin-top:12px;">
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </nav>
 
-    <!-- Main Content -->
-    <main style="margin-top: 60px; padding: 1em;"> 
-        <h1>Welcome to Kaupo's Website</h1>
+                <div style="margin-top:14px;">
+                    <button id="greetBtn">Click to greet</button>
+                    <span id="now" style="margin-left:12px; color:var(--muted);"></span>
+                </div>
+            </section>
+        </main>
 
-        <section id="home">
-            <h2>Home</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non bibendum nisl. Aenean non nulla id turpis ultricies aliquam. In eleifend a libero ac tristique. Curabitur nec blandit nisi, consequat vestibulum dui. Vestibulum pretium dolor a sem finibus imperdiet. Vestibulum eu neque pharetra, aliquet arcu sed, ornare ligula. Duis id urna sit amet nisl maximus condimentum sit amet vitae eros. Quisque iaculis condimentum interdum.</p>
-        </section>
+        <footer>
+            <div class="card" style="display:inline-block; padding:10px 16px;">
+                © <span id="year"></span> Simple Page
+            </div>
+        </footer>
+    </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>bibendum semper. Praesent mi turpis, consectetur sit amet tincidunt eu, suscipit quis ante. Donec tellus mi, eleifend id egestas ac, convallis sit amet orci. Integer et tristique nunc, in dictum arcu. Fusce at diam condimentum sem egestas iaculis. Quisque at ipsum eget lectus congue sagittis. Curabitur sapien quam, efficitur ut tempus sed, vestibulum sed nulla.</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>TProin nec augue lacinia, lacinia augue ac, convallis tellus. Nunc dolor erat, pharetra et dui non, aliquam lobortis ligula. Sed vehicula convallis lobortis. Nulla ultrices, mi quis suscipit euismod, elit nisl eleifend velit, in varius magna urna sed ligula. Pellentesque condimentum nec turpis ac tempor. Cras ut pulvinar erat. Vestibulum scelerisque arcu nisl, vehicula egestas massa pulvinar vitae. Vestibulum ac diam dignissim, tristique felis non, maximus est. Quisque pellentesque lorem efficitur eros dictum, eget tempor velit dignissim. Vestibulum eleifend orci id dictum laoreet. Aliquam velit quam, aliquam ac nulla ut, sagittis scelerisque felis. Phasellus a turpis massa. Sed congue nunc nec leo fringilla, eget consectetur arcu tempus.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Phasellus rhoncus, diam ut accumsan vehicula, lectus quam facilisis ante, vel fermentum neque nulla semper massa. Proin vulputate nisl tellus, in laoreet quam convallis vitae. Vivamus non dui ut ante rutrum ornare. Donec euismod, nulla sed pharetra condimentum, urna ante pharetra augue, quis elementum lacus nisl quis lectus. Sed rutrum arcu et dui efficitur gravida. Duis pharetra egestas magna, vel commodo purus mollis pulvinar. In hac habitasse platea dictumst. Mauris nec auctor neque.</p>
-        </section>
-    </main> 
+    <script>
+        // small interactive bits
+        document.getElementById('greetBtn').addEventListener('click', function () {
+            const now = new Date();
+            document.getElementById('now').textContent = now.toLocaleTimeString();
+            alert('Hello — this is a simple HTML page!');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
